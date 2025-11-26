@@ -1,0 +1,105 @@
+{
+  "volumeTypes": {
+    "humanoid": {
+      "geometry": "capsule",
+      "args": [0.25, 0.8, 8, 16],
+      "description": "Human-like bipedal form",
+      "examples": ["robot", "alien", "ghost", "zombie"]
+    },
+    "quadruped": {
+      "geometry": "capsule",
+      "args": [0.3, 1.0, 8, 16],
+      "rotation": [1.5708, 0, 0],
+      "description": "Four-legged animal form",
+      "examples": ["dog", "horse", "cow", "lion", "wolf", "deer"]
+    },
+    "bird": {
+      "geometry": "sphere",
+      "args": [0.4, 16, 16],
+      "description": "Avian form",
+      "examples": ["chicken", "eagle", "penguin", "owl", "crow"]
+    },
+    "serpent": {
+      "geometry": "cylinder",
+      "args": [0.2, 0.1, 1.5, 8],
+      "description": "Long, sinuous form",
+      "examples": ["snake", "dragon", "mermaid tail", "eel", "worm"]
+    },
+    "fish": {
+      "geometry": "sphere",
+      "args": [0.35, 16, 8],
+      "scale": [1, 0.6, 1.5],
+      "description": "Aquatic form",
+      "examples": ["fish", "shark", "whale", "dolphin"]
+    },
+    "insect": {
+      "geometry": "sphere",
+      "args": [0.2, 8, 8],
+      "description": "Small arthropod form",
+      "examples": ["ant", "beetle", "spider", "butterfly"]
+    },
+    "blob": {
+      "geometry": "sphere",
+      "args": [0.5, 16, 16],
+      "description": "Amorphous form",
+      "examples": ["slime", "cloud", "spirit", "abstract entity"]
+    },
+    "seated": {
+      "geometry": "sphere",
+      "args": [0.4, 16, 16],
+      "scale": [1, 0.7, 1],
+      "description": "Compact seated/crouched form",
+      "examples": ["cat sitting", "frog", "rabbit", "buddha"]
+    },
+    "tall": {
+      "geometry": "cylinder",
+      "args": [0.2, 0.2, 2, 8],
+      "description": "Tall, thin form",
+      "examples": ["tree", "lamp post", "tower", "giraffe"]
+    },
+    "wide": {
+      "geometry": "box",
+      "args": [1.5, 0.5, 0.8],
+      "description": "Wide, flat form",
+      "examples": ["car", "couch", "table", "crab"]
+    }
+  },
+  "presets": {
+    "mermaid": {
+      "type": "serpent",
+      "label": "MERMAID",
+      "scale": 1.2,
+      "notes": "Prompt should describe upper body as human, lower as fish tail"
+    },
+    "dragon": {
+      "type": "quadruped",
+      "label": "DRAGON",
+      "scale": 2.0,
+      "notes": "Prompt should mention wings, scales, fire-breathing"
+    },
+    "chicken": {
+      "type": "bird",
+      "label": "CHICKEN",
+      "scale": 0.5,
+      "notes": "Small, ground-dwelling bird"
+    },
+    "horse": {
+      "type": "quadruped",
+      "label": "HORSE",
+      "scale": 1.5,
+      "notes": "Large quadruped, often with rider"
+    },
+    "ghost": {
+      "type": "humanoid",
+      "label": "GHOST",
+      "scale": 1.0,
+      "notes": "Prompt should describe transparency, ethereal quality"
+    },
+    "car": {
+      "type": "wide",
+      "label": "CAR",
+      "scale": 1.0,
+      "notes": "Vehicle, prompt should specify type"
+    }
+  }
+}
